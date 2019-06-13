@@ -9,11 +9,11 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/mdb.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <style type="text/css">
     @media (min-width: 800px) and (max-width: 850px) {
       .navbar:not(.top-nav-collapse) {
@@ -21,18 +21,55 @@
       }
     }
 
+    @media only screen and (max-width: 768px) {
+ #carousel-example-1z {
+  display:none;
+  }
+  #logo{
+    display:none;
+  }
+
+   }
+   @media only screen and (min-width: 768px) {
+  #carousel-example-2z {
+  display:none;
+  }
+
+
+   }
+
+   #logo{ 
+    max-height: 50px;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0; 
+    padding-left:10px
+}
+   #logomovil{ 
+    padding-top: 300px;
+    max-width: 100%; 
+    overflow: visible;
+    opacity: 0.3;
+  
+}
+.redessociales {
+  height: 40px;
+  width: 40px; 
+  float:right;
+  margin-top: 10px
+}
   </style>
+
 </head>
 
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+<!-- Navbar -->
+  <nav style="padding-top: 0px; padding-bottom: 0px"class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container">
 
       <!-- Brand -->
       <a class="navbar-brand" href="#" target="_blank">
-        <strong>Bellaco Adventures</strong>
+        <img id="logo" src="./img/imagenesslider/logo.png" alt="Logo">
       </a>
 
 
@@ -49,12 +86,17 @@
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
             <a href="#" class="nav-link" target="_blank">
-              <i class="fab fa-facebook-f"></i>
+              <i style="color:black"class="fab fa-facebook-f"></i>
             </a>
           </li>
           <li class="nav-item">
             <a href="https://www.instagram.com/bellaco.adventure/" class="nav-link" target="_blank">
-              <i class="fab fa-instagram"></i>
+              <i style="color:black" class="fab fa-instagram"></i>
+            </a>
+          </li>
+            <li class="nav-item">
+            <a href="https://www.instagram.com/bellaco.adventure/" class="nav-link" target="_blank">
+              <i style="color:black" class="fas fa-store"></i>
             </a>
           </li>
        
@@ -65,6 +107,9 @@
     </div>
   </nav>
   <!-- Navbar -->
+  
+  
+ 
 
   <!--Carousel Wrapper-->
   <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
@@ -73,7 +118,6 @@
     <ol class="carousel-indicators">
       <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
     </ol>
     <!--/.Indicators-->
 
@@ -81,70 +125,27 @@
     <div class="carousel-inner" role="listbox">
 
       <!--First slide-->
-      <div class="carousel-item active">
-        <div class="view" style="background-image: url('./img/imagenesslider/bellaco1.JPG'); background-repeat: no-repeat; background-size: cover;">
+      <div class="carousel-item active" id="tresimagenes">
+        <div class="view" style="background-image: url('./img/imagenesslider/bellaco1.JPG'); background-repeat: no-repeat; background-size: cover; background-position: center;">
 
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+  
 
-           
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong>BELLACO</strong>
-                <br>
-                <strong>ADVENTURES</strong>
-              </h1>
-        
-     <!-- 
-              <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                  written versions
-                  available. Create your own, stunning website.</strong>
-              </p>
-
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
-             
-              </a> -->
-            </div>
-       
-
-          </div>
           <!-- Mask & flexbox options-->
 
         </div>
       </div>
+
       <!--/First slide-->
+
 
       <!--Second slide-->
       <div class="carousel-item ">
-          <div class="view" style="background-image: url('./img/imagenesslider/bellaco2.JPG'); background-repeat: no-repeat; background-size: cover;">
-  
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-  
+          <div class="view" style="background-image: url('./img/imagenesslider/bellaco2.JPG'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+
              
-              <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
-                  <strong>BELLACO</strong>
-                  <br>
-                  <strong>ADVENTURES</strong>
-                </h1>
-          
-       <!-- 
-                <p class="mb-4 d-none d-md-block">
-                  <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                    written versions
-                    available. Create your own, stunning website.</strong>
-                </p>
   
-                <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                  free tutorial
-                  <i class="fas fa-graduation-cap ml-2"></i>
-               
-                </a> -->
-              </div>
+  
+          
          
   
             </div>
@@ -154,42 +155,8 @@
         </div>
       <!--/Second slide-->
 
-      <!--Third slide-->
-      <div class="carousel-item ">
-          <div class="view" style="background-image: url('./img/imagenesslider/bellaco3.JPG'); background-repeat: no-repeat; background-size: cover;">
-  
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-  
-             
-              <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
-                  <strong>BELLACO</strong>
-                  <br>
-                  <strong>ADVENTURES</strong>
-                </h1>
-          
-       <!-- 
-                <p class="mb-4 d-none d-md-block">
-                  <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                    written versions
-                    available. Create your own, stunning website.</strong>
-                </p>
-  
-                <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                  free tutorial
-                  <i class="fas fa-graduation-cap ml-2"></i>
-               
-                </a> -->
-              </div>
-         
-  
-            </div>
-            <!-- Mask & flexbox options-->
-  
-          </div>
-        </div>
-      <!--/Third slide-->
+
+
 
     </div>
     <!--/.Slides-->
@@ -200,6 +167,125 @@
       <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+
+
+  <!--Carousel Wrapper  MOVILE-->
+  <div id="carousel-example-2z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2z" data-slide-to="2"></li>
+      <li data-target="#carousel-example-2z" data-slide-to="3"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('./img/imagenesslider/chiqui1.JPG'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+     
+
+          <!-- Mask & flexbox options-->
+          <div class="mask d-flex justify-content-center align-items-center">
+      
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+                 <img id="logomovil" src="./img/imagenesslider/logo.png" alt="Logo">
+                </h1>
+             </div>
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+
+      <!--/First slide-->
+       <!--Segundo slide movil-->
+      <div class="carousel-item" >
+        <div class="view" style="background-image: url('./img/imagenesslider/chiqui2.JPG'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+       
+
+         <!-- Mask & flexbox options-->
+          <div class="mask  d-flex justify-content-center align-items-center">
+      
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+                 <img id="logomovil" src="./img/imagenesslider/logo.png" alt="Logo">
+                </h1>
+             </div>
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+
+      <!--/segundo slide movil-->
+       <!--Tercer slide movil-->
+      <div class="carousel-item" >
+        <div class="view" style="background-image: url('./img/imagenesslider/chiqui3.JPG'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <!-- Mask & flexbox options-->
+          <div class="mask  d-flex justify-content-center align-items-center">
+      
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+                 <img id="logomovil" src="./img/imagenesslider/logo.png" alt="Logo">
+                </h1>
+             </div>
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+
+      <!--/Tercer slide-->
+      <!--cuarto slide movil-->
+      <div class="carousel-item ">
+          <div class="view" style="background-image: url('./img/imagenesslider/bellaco2.JPG'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+
+  
+            <!-- Mask & flexbox options-->
+          <div class="mask  d-flex justify-content-center align-items-center">
+      
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+                 <img id="logomovil" src="./img/imagenesslider/logo.png" alt="Logo">
+                </h1>
+             </div>
+
+          </div>
+          <!-- Mask & flexbox options-->
+  
+          </div>
+        </div>
+      <!--/cuarto slide movil-->
+
+
+
+
+    </div>
+    <!--/.Slides movil-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2z" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
