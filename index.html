@@ -371,6 +371,7 @@ function shareOverrideOGMeta(overrideLink, overrideTitle, overrideDescription, o
  
 function shareOriginal()
 {
+  $("meta[property='og\\:title']").attr("content", "http://drib.tech/fbsharetest/quiz_jar_jar_binks.jpg");
   FB.ui({
     method: 'share',
     href: window.location.href
